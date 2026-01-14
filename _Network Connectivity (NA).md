@@ -2549,14 +2549,16 @@ show ip route
 
 | Legend | Routing Protocol | Administrative Distance | Metric |
 | ---    | ---              | ---                     | ---    |
-| C      | Connected        |                         |        |
-| S      | Static           |                         |        |
-| D      | EIGRP            |                         |        |
-| D EX   | External EIGRP   |                         |        |
-| O      | OSPF             |                         |        |
-| O E2   | External T5 OSPF |                         |        |
-| B      | Internal BGP     |                         |        |
-| B      | External BGP     |                         |        |
+| C      | Connected        |          0              |        |
+| S      | Static           |           1             |        |
+| D      | EIGRP            |           90            |        |
+| D EX   | External EIGRP   |          170            |        |
+| O      | OSPF             |          110            |        |
+| O E2   | External T5 OSPF |         110             |        |
+| B      | Internal BGP     |         200             |        |
+| B      | External BGP     |         20              |        |
+| R      | RIPV2            |                       |        |
+| SU     | Isis             |                       |        |
 
 <br>
 
@@ -2564,10 +2566,8 @@ show ip route
 !@R1, I1 - CONVERGE
 show ip route
 ~~~
-
 <br>
 <br>
-
 ---
 &nbsp;
 
